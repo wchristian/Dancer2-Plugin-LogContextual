@@ -2,11 +2,28 @@
 
 =head1 NAME
 
-Dancer2::Plugin::LogContextual
+Dancer2::Plugin::LogContextual - wrap a Dancer2 plack app in the configured Log::Contextual logger
 
 =head1 VERSION
 
-version 0.000001
+version 1.152120
+
+=head1 SYNOPSIS
+
+    use Dancer2;
+
+    use Dancer2::Plugin::LogContextual;
+    use Log::Contextual ':log';
+
+    any '/' => sub {
+        log_error "aaaah"; # logs via lc_logger below
+    };
+
+    set lc_logger => MyLCLogger->new;
+
+    my $app = to_app; # the logger above will now be active for every route
+                      # dispatched by this app and every function called
+                      # therein
 
 =for :stopwords cpan testmatrix url annocpan anno bugtracker rt cpants kwalitee diff irc mailto metadata placeholders metacpan
 

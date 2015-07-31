@@ -1,5 +1,5 @@
 {
-   "abstract" : "#",
+   "abstract" : "wrap a Dancer2 plack app in the configured Log::Contextual logger",
    "author" : [
       "Christian Walde <walde.christian@gmail.com>"
    ],
@@ -43,6 +43,11 @@
       },
       "runtime" : {
          "requires" : {
+            "Dancer2" : "0",
+            "Dancer2::Plugin" : "0",
+            "Dancer2::Plugin::AppRole::Helper" : "0",
+            "Log::Contextual" : "0",
+            "Moo::Role" : "0",
             "perl" : "5.006",
             "strictures" : "2"
          }
@@ -62,9 +67,13 @@
       }
    },
    "provides" : {
+      "Dancer2::Plugin::AppRole::LogContextual" : {
+         "file" : "lib/Dancer2/Plugin/AppRole/LogContextual.pm",
+         "version" : "1.152120"
+      },
       "Dancer2::Plugin::LogContextual" : {
          "file" : "lib/Dancer2/Plugin/LogContextual.pm",
-         "version" : "0.000001"
+         "version" : "1.152120"
       }
    },
    "release_status" : "stable",
@@ -80,6 +89,6 @@
          "web" : "https://github.com/wchristian/Dancer2-Plugin-LogContextual"
       }
    },
-   "version" : "0.000001"
+   "version" : "1.152120"
 }
 
