@@ -6,7 +6,7 @@ Dancer2::Plugin::LogContextual - wrap a Dancer2 plack app in the configured Log:
 
 =head1 VERSION
 
-version 1.152120
+version 1.152121
 
 =head1 SYNOPSIS
 

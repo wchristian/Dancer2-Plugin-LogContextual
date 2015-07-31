@@ -69,11 +69,19 @@
    "provides" : {
       "Dancer2::Plugin::AppRole::LogContextual" : {
          "file" : "lib/Dancer2/Plugin/AppRole/LogContextual.pm",
-         "version" : "1.152120"
+         "version" : "1.152121"
+      },
+      "Dancer2::Plugin::AppRole::LogContextualWarn" : {
+         "file" : "lib/Dancer2/Plugin/AppRole/LogContextualWarn.pm",
+         "version" : "1.152121"
       },
       "Dancer2::Plugin::LogContextual" : {
          "file" : "lib/Dancer2/Plugin/LogContextual.pm",
-         "version" : "1.152120"
+         "version" : "1.152121"
+      },
+      "Dancer2::Plugin::LogContextualWarn" : {
+         "file" : "lib/Dancer2/Plugin/LogContextualWarn.pm",
+         "version" : "1.152121"
       }
    },
    "release_status" : "stable",
@@ -89,6 +97,6 @@
          "web" : "https://github.com/wchristian/Dancer2-Plugin-LogContextual"
       }
    },
-   "version" : "1.152120"
+   "version" : "1.152121"
 }
 
