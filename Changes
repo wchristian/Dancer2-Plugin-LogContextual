@@ -1,6 +1,7 @@
 Revision history for {{$dist->name}}
 
 {{$NEXT}}
+    - add Dancer2::Plugin::LogContextualWarn
 
 1.152120  2015-07-31 22:29:13+02:00 Europe/Berlin
     - first release
